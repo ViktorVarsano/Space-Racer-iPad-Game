@@ -12,6 +12,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var player: SKSpriteNode!
     var scoreLabel: SKLabelNode!
      
+    var possibleEnemies = ["ball", "hammer", "tv"]
+    
     var score = 0 {
         didSet{
             scoreLabel.text = "Score: \(score)"
